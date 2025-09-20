@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Keys Setup Guide</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .step { background: #f5f5f5; padding: 15px; margin: 10px 0; border-radius: 8px; }
+        .urgent { background: #ffe6e6; border-left: 4px solid #ff4444; }
+        .success { background: #e6ffe6; border-left: 4px solid #44ff44; }
+        .code { background: #f0f0f0; padding: 10px; border-radius: 4px; font-family: monospace; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>🚀 Arise - API Setup</h1>
+    
+    <div class="step urgent">
+        <h2>🚨 Current Issue</h2>
+        <p>Your app is showing <strong>"Publishable key not valid"</strong> because you're using placeholder API keys instead of real ones.</p>
+    </div>
+
+    <div class="step">
+        <h2>1️⃣ Clerk Authentication (2 minutes)</h2>
+        <ol>
+            <li>Go to <a href="https://clerk.com" target="_blank">clerk.com</a></li>
+            <li>Sign up for a free account</li>
+            <li>Create a new application</li>
+            <li>Copy your keys from the dashboard</li>
+        </ol>
+        <p><strong>Replace in .env.local:</strong></p>
+        <div class="code">
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="pk_test_your_real_key_here"<br>
+CLERK_SECRET_KEY="sk_test_your_real_secret_here"
+        </div>
+    </div>
+
+    <div class="step">
+        <h2>2️⃣ Google Gemini AI (1 minute)</h2>
+        <ol>
+            <li>Go to <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a></li>
+            <li>Sign in with your Google account</li>
+            <li>Click "Create API Key"</li>
+            <li>Copy the generated key</li>
+        </ol>
+        <p><strong>Replace in .env.local:</strong></p>
+        <div class="code">
+GEMINI_API_KEY="your_real_gemini_key_here"
+        </div>
+    </div>
+
+    <div class="step">
+        <h2>3️⃣ MongoDB Compass Database (Local)</h2>
+        <p>Your app is configured to use MongoDB Compass (local database):</p>
+        <ol>
+            <li>Download <a href="https://www.mongodb.com/try/download/community" target="_blank">MongoDB Community Server</a></li>
+            <li>Install with default settings (includes Compass)</li>
+            <li>Start MongoDB service: <code>net start MongoDB</code></li>
+            <li>Open MongoDB Compass and connect to: <code>mongodb://localhost:27017</code></li>
+        </ol>
+        <p><strong>Your app is already configured for this connection!</strong></p>
+    </div>
+
+    <div class="step success">
+        <h2>4️⃣ Final Steps</h2>
+        <ol>
+            <li>Save your .env.local file with the real API keys</li>
+            <li>Restart your dev server: <code>npm run dev</code></li>
+            <li>Visit <a href="http://localhost:3000" target="_blank">http://localhost:3000</a></li>
+        </ol>
+        <p><strong>Your app will work perfectly once you have real API keys!</strong></p>
+    </div>
+
+    <div class="step">
+        <h2>🔧 Current Progress</h2>
+        <ul>
+            <li>✅ Dependencies installed</li>
+            <li>✅ MongoDB Compass configuration ready</li>
+            <li>✅ Local database connection configured</li>
+            <li>⚠️ Need real Clerk keys</li>
+            <li>⚠️ Need real Gemini API key</li>
+            <li>⚠️ Need to install & start MongoDB</li>
+        </ul>
+    </div>
+
+    <script>
+        // Check if running on localhost
+        if (window.location.hostname === 'localhost') {
+            document.body.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            document.body.style.color = 'white';
+        }
+    </script>
+</body>
+</html>

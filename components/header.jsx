@@ -1,0 +1,1 @@
+// Navbar and Tools dropdown removed for a clean, professional, and responsive design.

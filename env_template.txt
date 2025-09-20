@@ -1,0 +1,13 @@
+﻿# Database Configuration
+DATABASE_URL="mongodb://localhost:27017/arise"
+
+# Clerk Authentication (Get these from https://clerk.com)
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="pk_test_your_actual_publishable_key_here"
+CLERK_SECRET_KEY="sk_test_your_actual_secret_key_here"
+
+# Google Gemini AI (Get from https://aistudio.google.com/app/apikey)
+GEMINI_API_KEY="your_actual_gemini_api_key_here"
+
+# Next.js Configuration
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="your_nextauth_secret_here"
