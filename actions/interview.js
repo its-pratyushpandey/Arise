@@ -42,8 +42,6 @@ export async function generateQuiz() {
       ]
     }
   `;
-
-  // Retry logic: try up to 3 times with delay if 503 error
   let attempts = 0;
   const maxAttempts = 3;
   const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -154,7 +152,6 @@ export async function getAssessments() {
   });
 
   if (!user) throw new Error("User not found");
-
   try {
     const assessments = await db.assessment.findMany({
       where: {
@@ -164,7 +161,6 @@ export async function getAssessments() {
         createdAt: "asc",
       },
     });
-
     return assessments;
   } catch (error) {
     console.error("Error fetching assessments:", error);
