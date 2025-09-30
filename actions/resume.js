@@ -39,7 +39,6 @@ export async function saveResume(content) {
     throw new Error("Failed to save resume");
   }
 }
-
 export async function getResume() {
   const { userId } = await auth();
   if (!userId) throw new Error("Unauthorized");
