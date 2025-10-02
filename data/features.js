@@ -1,5 +1,4 @@
 import { AcademicCapIcon, BriefcaseIcon, ChartBarIcon, DocumentTextIcon, RocketLaunchIcon, PencilSquareIcon, LightBulbIcon, ChartBarSquareIcon } from '@heroicons/react/24/solid';
-
 export const features = [
   {
     icon: <RocketLaunchIcon className="w-10 h-10 mb-4 text-blue-700" />,
