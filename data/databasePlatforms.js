@@ -1,5 +1,4 @@
 import { SiMysql, SiPostgresql, SiMongodb, SiSqlite, SiCouchbase, SiFirebase, SiAmazondynamodb } from 'react-icons/si';
-
 export const databasePlatforms = [
   { name: 'MySQL', icon: SiMysql },
   { name: 'PostgreSQL', icon: SiPostgresql },
