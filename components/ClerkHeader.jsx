@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import ATSChecker from "@/components/ATSChecker/ATSChecker";
-
 export default function ClerkHeader() {
   const [atsOpen, setAtsOpen] = useState(false);
   return (
@@ -48,4 +47,5 @@ export default function ClerkHeader() {
       </div>
     </header>
   );
+
 }
