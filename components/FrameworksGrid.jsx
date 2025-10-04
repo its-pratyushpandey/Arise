@@ -1,9 +1,9 @@
 "use client";
 import { frameworks } from "@/data/frameworks";
-
 export default function FrameworksGrid() {
   return (
     <section className="w-full py-10 px-2 md:px-0">
+
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
         Frameworks & Libraries
       </h2>
