@@ -1,4 +1,4 @@
-// List of frameworks/libraries with icon components from react-icons
+
 import { FaReact, FaAngular, FaVuejs, FaNodeJs, FaPython, FaJava, FaSwift, FaBootstrap, FaLaravel, FaCode } from 'react-icons/fa';
 import { SiNextdotjs, SiNuxtdotjs, SiExpress, SiDjango, SiFlask, SiRubyonrails, SiFlutter, SiIonic, SiJetpackcompose, SiSpringboot, SiDotnet, SiNestjs, SiTensorflow, SiPytorch, SiKeras, SiScikitlearn, SiPandas, SiNumpy, SiTailwindcss } from 'react-icons/si';
 
