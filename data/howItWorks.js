@@ -1,5 +1,4 @@
 import { UserGroupIcon, DocumentCheckIcon, ChatBubbleLeftRightIcon, ChartPieIcon } from '@heroicons/react/24/solid';
-
 export const howItWorks = [
   {
     title: "Personalized Onboarding",
