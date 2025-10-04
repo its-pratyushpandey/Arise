@@ -10,11 +10,8 @@ import PortfolioGeneratorDashboard from "@/app/(main)/dashboard/_component/portf
 const HeroSection = () => {
   const imageRef = useRef(null);
   const [portfolioOpen, setPortfolioOpen] = useState(false);
-
   useEffect(() => {
-    const imageElement = imageRef.current;
-
-    // Animate Build Resume button on mount
+    const imageElement = imageRef.current;  
     gsap.fromTo(
       ".build-resume-cta",
       { scale: 0.8, opacity: 0 },
