@@ -1,7 +1,5 @@
-// Professional icons for tools & platforms using react-icons
 import { FaGithub, FaGitlab, FaDocker, FaJenkins, FaFigma } from 'react-icons/fa';
 import { SiTravisci, SiPostman, SiSwagger, SiCanva, SiNotion, SiVsco, SiIntellijidea, SiEclipseide, SiKubernetes } from 'react-icons/si';
-
 export const toolsPlatforms = [
   { name: 'GitHub', icon: FaGithub },
   { name: 'GitLab', icon: FaGitlab },
