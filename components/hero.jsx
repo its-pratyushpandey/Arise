@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import PortfolioGeneratorDashboard from "@/app/(main)/dashboard/_component/portfolio-generator-dashboard";
-
 const HeroSection = () => {
   const imageRef = useRef(null);
   const [portfolioOpen, setPortfolioOpen] = useState(false);
