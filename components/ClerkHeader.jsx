@@ -14,6 +14,7 @@ export default function ClerkHeader() {
           Arise
         </span>
       </div>
+      
       <div className="flex items-center gap-2">
         <Button
           className="bg-gradient-to-r from-[#64ffda] to-[#52e0c4] text-[#0a192f] font-bold px-4 py-2 rounded-lg shadow-lg border-2 border-[#0a192f] hover:from-[#52e0c4] hover:to-[#64ffda] transition-all text-sm focus:ring-4 focus:ring-[#64ffda] z-50"
